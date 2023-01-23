@@ -1,0 +1,45 @@
+#about {
+  .about-section {
+    @include flexbox-7;
+    p {
+      line-height: 2.3rem;
+      font-size: 1.3rem;
+    }
+    .image-1 {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .image-2 {
+      background: url("../images/about-image-2.png") center/cover no-repeat;
+      width: 50%;
+      height: 64.9rem;
+      padding: 4rem;
+      @include flexbox-2;
+      .content {
+        .category {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 2rem;
+          img {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media query
+
+@media screen and (max-width: 767px) {
+  .image-1 {
+    width: 100% !important;
+  }
+  .image-2 {
+    width: 100% !important;
+    padding: 2rem !important;
+  }
+}

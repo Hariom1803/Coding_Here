@@ -1,0 +1,23 @@
+// header css
+.header {
+  background-color: var(--bg-black);
+  padding: 1rem 0;
+  color: var(--white);
+  font-size: 1.3rem;
+  i {
+    color: var(--light-green);
+  }
+  a {
+    color: var(--white);
+    &:hover {
+      color: var(--light-green);
+    }
+  }
+}
+
+// media
+@media screen and (max-width: 357px) {
+  .header {
+    display: none;
+  }
+}

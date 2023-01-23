@@ -1,0 +1,24 @@
+#experts {
+  .expert-section {
+    background: url("../images/expert-bg.png") center/cover no-repeat;
+    width: 100%;
+    height: auto;
+    h2,
+    h3 {
+      color: black;
+    }
+    p {
+      line-height: 2.3rem;
+      font-size: 1.4rem;
+      color: black;
+    }
+    .description {
+      padding: 2.5rem;
+    }
+    .expert-slider {
+      .slide {
+        border: 0.1rem solid #707070;
+      }
+    }
+  }
+}

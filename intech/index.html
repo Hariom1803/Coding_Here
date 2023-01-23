@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intech</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="sass/all.min.css">
+    <link rel="stylesheet" href="sass/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/owl.carousel.min.css">
+    <link rel="stylesheet" href="sass/owl.theme.default.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <!-- <div class="loader">
+        <img src="/images/loader.gif" alt="a loader">
+    </div> -->
+
+
+    <!-- scroll to top -->
+    <div class="scroll-top fa fa-angle-up">
+    </div>
+
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="d-none col-md-6 d-md-block">We are reliable & consistent IT-Solution team</div>
+                <div
+                    class="col-12 justify-content-md-end col-md-6 d-flex justify-content-start align-items-center gap-5">
+                    <div> <i class="fa-regular fa-clock me-2"></i> Mon - Sat 9.00 - 18.00</div>
+                    <a href="tel:(+91) 998-274-0620"> <i class="fa-solid fa-phone me-2"></i> (+91) 998-274-0620</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md sticky-top custom-nav shadow">
+        <div class="container">
+
+            <a class="navbar-brand fs-3 fw-medium" href="/index.html"> <i class="fa-solid fa-globe fs-3"></i> Intech
+            </a>
+            <a href="#" class="fas fa-moon d-block d-md-none theme-mode" onclick="themeMode()"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+
+
+                <ul class="navbar-nav nav-pills ms-auto gap-3 fs-4 d-flex align-items-center p-2">
+                    <li class="nav-item active"> <a class="nav-link" href="#home">Home </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#about"> About </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#service" data-bs-toggle="dropdown"> Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 4 </a>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#blog" data-bs-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 3 &raquo; </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 4 &raquo;</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
+                            <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#project"> Projects </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"> Contact </a></li>
+
+                    <li>
+                        <i id="search-icon" class="fas fa-search"></i>
+                        <div class="input-group" id="search-box">
+                            <input type="text" class="p-2" placeholder="Type here to search"
+                                aria-label="Type here to search" aria-describedby="button-addon2">
+                            <button class="btn btn-primary p-2" type="button" id="button-addon2">Search</button>
+                        </div>
+                    </li>
+                    <li>
+                    <li>
+                        <button class="btn btn-primary p-2 lng-btn">Australia-Eng</button>
+                    </li>
+                    <li>
+                        <a class="fas fa-moon d-none d-md-block theme-mode" onclick="themeMode()"></a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main section of page -->
+    <main>
+
+
+
+        <!-- hero section -->
+        <section id="hero">
+            <div class="hero-bg">
+                <div class="container">
+                    <div class="content">
+                        <h1>Reliable & Consistent IT-Solutions</h1>
+                        <p>We Provide IT-Services</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga,
+                            <br> dolores adipisci laboriosam labore libero recusandae fugit doloremque <br> rerum
+                            tempore ducimus deserunt exercitationem unde sequi quaerat <br> similique? Cum, iusto qui.
+                        </p>
+                        <div>
+                            <button class="btn btn-primary me-2 btn-1">Free Consultation</button>
+                            <button class="btn btn-primary btn-2">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- home section -->
+        <section id="home">
+            <div class="container">
+                <div class="home-section">
+                    <div class="home-img">
+                        <img src="images/home-img.png" alt="image">
+                    </div>
+                    <div class="content">
+                        <h2 class="fs-1">Best IT-Solutions Company <br> near the world</h2>
+                        <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, fuga? Quod fugiat
+                            incidunt, assumenda hic vitae facere non aperiam earum culpa libero dicta nobis ullam eaque
+                            mollitia saepe eligendi dolor?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ad unde libero rerum quam
+                            tempora, architecto natus excepturi totam consequuntur odio expedita odit id dolorum quod?
+                            Sequi facilis porro perspiciatis aut assumenda asperiores non.</p>
+                        <p class="my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ad unde
+                            libero rerum quam
+                            tempora, architecto natus excepturi totam consequuntur odio expedita odit id dolorum quod?
+                            Sequi facilis porro perspiciatis aut assumenda asperiores non.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>It has roots in a piece</li>
+                            <li>Contrary to popular belief</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>It has roots in a piece</li>
+                            <li>Contrary to popular belief</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>It has roots in a piece</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- service section -->
+        <section id="service">
+            <div class="service">
+                <div class="container">
+                    <h2 class="text-center fs-1 mt-5">World best IT-Solutions <br> we provide</h2>
+                    <div class="service-slider owl-carousel owl-theme">
+                        <div class="slide item">
+                            <img src="images/service-icon-1.png" alt="image">
+                            <h3>Managed IT Services</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis minus, sapiente sed,
+                                quia labore fugit nam officia quod enim veniam doloremque nobis est illo pariatur magnam
+                                ea nulla laboriosam molestias in magni! Quam?</p>
+                        </div>
+                        <div class="slide item">
+                            <img src="images/service-icon-2.png" alt="image">
+                            <h3>Multi-function services</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis minus, sapiente sed,
+                                quia labore fugit nam officia quod enim veniam doloremque nobis est illo pariatur magnam
+                                ea nulla laboriosam molestias in magni! Quam?</p>
+                        </div>
+                        <div class="slide item">
+                            <img src="images/service-icon-3.png" alt="image">
+                            <h3>Cyber Security</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis minus, sapiente sed,
+                                quia labore fugit nam officia quod enim veniam doloremque nobis est illo pariatur magnam
+                                ea nulla laboriosam molestias in magni! Quam?</p>
+                        </div>
+                        <div class="slide item">
+                            <img src="images/service-icon-1.png" alt="image">
+                            <h3>Managed IT Services</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis minus, sapiente sed,
+                                quia labore fugit nam officia quod enim veniam doloremque nobis est illo pariatur magnam
+                                ea nulla laboriosam molestias in magni! Quam?</p>
+                        </div>
+                        <div class="slide item">
+                            <img src="images/service-icon-2.png" alt="image">
+                            <h3>Multi-function services</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis minus, sapiente sed,
+                                quia labore fugit nam officia quod enim veniam doloremque nobis est illo pariatur magnam
+                                ea nulla laboriosam molestias in magni! Quam?</p>
+                        </div>
+                        <div class="slide item">
+                            <img src="images/service-icon-3.png" alt="image">
+                            <h3>Cyber Security</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio quis minus, sapiente sed,
+                                quia labore fugit nam officia quod enim veniam doloremque nobis est illo pariatur magnam
+                                ea nulla laboriosam molestias in magni! Quam?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="container">
+                    <div class="content">
+                        <h2 class="text-white fs-1">We run all kinds of IT services <br> that vow your success</h2>
+                        <div class="buttons">
+                            <button class="btn btn-primary btn-1 me-2">Read More</button>
+                            <button class="btn btn-primary btn-2">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- project section -->
+        <section id="project">
+            <div class="project-section">
+                <div class="container">
+                    <h2 class="fs-1 lh-base">Thousand's of projects completed <br> in 20 countries</h2>
+                    <div class="boxes">
+                        <div class="box">
+                            <img src="images/project-1.png" alt="an image">
+                            <p>Managed It</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/project-2.png" alt="an image">
+                            <p>Virtual Integration It</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/project-3.png" alt="an image">
+                            <p>Multi-Function</p>
+                        </div>
+                        <div class="box">
+                            <img src="images/project-4.png" alt="an image">
+                            <p>Cyber Security</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">All Projects</button>
+                </div>
+                <div class="banner-bg" id="section_counter">
+                    <div class="container">
+                        <div class="counters">
+                            <div>
+                                <h4 class="counter" data-count="4000">0</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div>
+                                <h4 class="counter" data-count="15000">0</h4>
+                                <p>Satisfied Clients</p>
+                            </div>
+                            <div>
+                                <h4 class="counter" data-count="400">0</h4>
+                                <p>Experienced Staff</p>
+                            </div>
+                            <div>
+                                <h4 class="counter" data-count="1000">0</h4>
+                                <p>International Awards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- about section -->
+        <section id="about" class="my-md-5 my-1 p-md-0 px-4">
+            <div class="about-section">
+                <div class="image-1">
+                    <img src="images/about-image-1.png" alt="an image">
+                </div>
+                <div class="image-2">
+                    <div class="content">
+                        <h2 class="fs-1">Why Choose Intech</h2>
+                        <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing. Magnam nesciunt aliquid,
+                            fugit deserunt voluptas vel voluptate rerum ipsam. Aliquid vero dicta cum praesentium
+                            explicabo illo amet nulla facilis labore, reprehenderit dignissimos, rem, minima iusto.</p>
+                        <div class="category my-5">
+                            <img src="images/service-icon-3.png" alt="an image">
+                            <div class="detail">
+                                <h3>Protect your business</h3>
+                                <p>Lorem ipsum dolor sit amet consec adipisicing elit. Hic sapiente ab quae in, porro
+                                    neque voluptates, repudiand impedit amet asperiores explicabo harum corrupti.
+                                    Expedita, deleniti? Tenetur consequuntur sunt quis.</p>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <img src="images/about-icon-2.png" alt="an image">
+                            <div class="detail">
+                                <h3>Protect your business</h3>
+                                <p>Lorem ipsum dolor sit amet consec adipisicing elit. Hic sapiente ab quae, porro neque
+                                    voluptates, repudiand impedit amet asperiores explicabo harum corrupti. Expedita,
+                                    deleniti? Tenetur consequuntur sunt quis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- customrs section -->
+        <section id="customer">
+            <div class="container">
+                <div class="customer-slider owl-carousel owl-theme">
+
+                    <div class="item slide">
+                        <img src="images/cus-1.png" alt="an image">
+                        <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore beatae incidunt
+                                praesentium
+                                illum nulla architecto itaque eum porro. Nulla rem est rerum mollitia quasi deserunt
+                                consequatur hic tenetur voluptatibus, laboriosam eos tempora nihil totam.</p>
+                            <h3>Peter Remsey /<span class="fs-4">Designer</span> </h3>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item slide">
+                        <img src="images/cus-2.png" alt="an image">
+                        <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore beatae incidunt
+                                praesentium
+                                illum nulla architecto itaque eum porro. Nulla rem est rerum mollitia quasi deserunt
+                                consequatur hic tenetur voluptatibus, laboriosam eos tempora nihil totam.</p>
+                            <h3>Isabelle Cook / <span class="fs-4">Developer</span> </h3>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item slide">
+                        <img src="images/cus-1.png" alt="an image">
+                        <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore beatae incidunt
+                                praesentium
+                                illum nulla architecto itaque eum porro. Nulla rem est rerum mollitia quasi deserunt
+                                consequatur hic tenetur voluptatibus, laboriosam eos tempora nihil totam.</p>
+                            <h3>Neha Dhupia /<span class="fs-4">Designer</span> </h3>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item slide">
+                        <img src="images/cus-2.png" alt="an image">
+                        <div class="content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore beatae incidunt
+                                praesentium
+                                illum nulla architecto itaque eum porro. Nulla rem est rerum mollitia quasi deserunt
+                                consequatur hic tenetur voluptatibus, laboriosam eos tempora nihil totam.</p>
+                            <h3>Siya Dubey / <span class="fs-4">Developer</span> </h3>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- experts section -->
+        <section id="experts" class="mt-md-5 mt-1">
+            <div class="expert-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3 description">
+                            <h2 class="fs-1">Meet with our best experts</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam commodi error
+                                eos, nihil modi iure, consectetur voluptatibus est eaque quis sapiente nostrum tempore
+                                dolore mollitia. Consectetur sed omnis eligendi!</p>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="expert-slider owl-carousel owl-theme">
+                                <div class="item slide">
+                                    <img src="images/team-1.png" alt="an image">
+                                    <h3 class="fs-2 p-2 pb-0">Lydia Neal</h3>
+                                    <p class="fs-4 mx-2">CO-Founder</p>
+                                </div>
+                                <div class="item slide">
+                                    <img src="images/team-2.png" alt="an image">
+                                    <h3 class="fs-2 p-2 pb-0">Betty Alexander</h3>
+                                    <p class="fs-4 mx-2">CO-Founder</p>
+                                </div>
+                                <div class="item slide">
+                                    <img src="images/team-3.png" alt="an image">
+                                    <h3 class="fs-2 p-2 pb-0">Charlotte Ortiz</h3>
+                                    <p class="fs-4 mx-2">CO-Founder</p>
+                                </div>
+                                <div class="item slide">
+                                    <img src="images/team-1.png" alt="an image">
+                                    <h3 class="fs-2 p-2 pb-0">Lydia Neal</h3>
+                                    <p class="fs-4 mx-2">CO-Founder</p>
+                                </div>
+                                <div class="item slide">
+                                    <img src="images/team-2.png" alt="an image">
+                                    <h3 class="fs-2 p-2 pb-0">Betty Alexander</h3>
+                                    <p class="fs-4 mx-2">CO-Founder</p>
+                                </div>
+                                <div class="item slide">
+                                    <img src="images/team-3.png" alt="an image">
+                                    <h3 class="fs-2 p-2 pb-0">Charlotte Ortiz</h3>
+                                    <p class="fs-4 mx-2">CO-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="fs-1 text-center p-2 p-md-5">Our best experts always with you</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section id="contact">
+            <div class="contact-section">
+                <div class="row">
+                    <div class="col-12 col-md-6 form-1">
+                        <div class="container">
+                            <h2 class="fs-1 text-dark">Contact with us</h2>
+                            <p class="mt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                                provident eveniet
+                                labore
+                                harum. Dignissimos consectetur eos blanditiis eveniet assumenda exercitationem
+                                totam, minus
+                                ex! Ipsa rerum quibusdam ad voluptatibus magnam delectus.</p>
+
+                            <form id="intechForm" autocomplete="off"
+                                action="mailto:hariomkumawat786@gmail.com?subject:form submitted" method="post"
+                                name="intechForm">
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <input type="text" class="w-100" placeholder="enter your name" name="name"
+                                            id="name" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="email" class="w-100" placeholder="enter your email address"
+                                            name="email" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="number" class="w-100 my-4" placeholder="enter your phone number"
+                                            name="number" id="number" minlength="10" maxlength="10" required>
+                                    </div>
+                                    <div>
+                                        <textarea name="description" placeholder="Write some here......"
+                                            id="description" class="w-100" rows="5" required></textarea>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <button type="submit" onclick="intechFormSubmit()" class="btn btn-primary mt-3">Free
+                                    Consultation</button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class="col-12 form-2">
+                                <h2 class="fs-1 text-white">We run all kinds of IT-Services <br> that vow your success
+                                    <button class="btn btn-primary">Contact us</button>
+                                </h2>
+                            </div>
+                            <div class="col-12 form-3">
+                                <h2 class="fs-1 text-dark">Make a contact with <br> our IT staff <br> call us <i
+                                        class="fa-solid fa-arrow-down"></i> </h2>
+                                <a href="tel:(+91) 998-274-0620">(+91) 998-274-0620</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
+        </section>
+
+        <!-- blog section -->
+        <section id="blog" class="mt-md-5 mt-1">
+            <div class="container">
+                <div class="blog-slider owl-carousel owl-theme">
+                    <div class="slide item">
+                        <img src="images/blog-1.png" alt="an image">
+                        <h2>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis rem consequatur
+                            cupiditate, deleniti in incidunt velit eum sit doloremque vitae id? Libero similique
+                            temporibus incidunt dolore vero velit. Amet, optio?</p>
+                        <p>by Md Sweem / Dec 24 2021</p>
+                    </div>
+                    <div class="slide item">
+                        <img src="images/blog-2.png" alt="an image">
+                        <h2>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis rem consequatur
+                            cupiditate, deleniti in incidunt velit eum sit doloremque vitae id? Libero similique
+                            temporibus incidunt dolore vero velit. Amet, optio?</p>
+                        <p>by Md Sweem / Dec 24 2021</p>
+                    </div>
+                    <div class="slide item">
+                        <img src="images/blog-3.png" alt="an image">
+                        <h2>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis rem consequatur
+                            cupiditate, deleniti in incidunt velit eum sit doloremque vitae id? Libero similique
+                            temporibus incidunt dolore vero velit. Amet, optio?</p>
+                        <p>by Md Sweem / Dec 24 2021</p>
+                    </div>
+                    <div class="slide item">
+                        <img src="images/blog-1.png" alt="an image">
+                        <h2>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis rem consequatur
+                            cupiditate, deleniti in incidunt velit eum sit doloremque vitae id? Libero similique
+                            temporibus incidunt dolore vero velit. Amet, optio?</p>
+                        <p>by Md Sweem / Dec 24 2021</p>
+                    </div>
+                    <div class="slide item">
+                        <img src="images/blog-2.png" alt="an image">
+                        <h2>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis rem consequatur
+                            cupiditate, deleniti in incidunt velit eum sit doloremque vitae id? Libero similique
+                            temporibus incidunt dolore vero velit. Amet, optio?</p>
+                        <p>by Md Sweem / Dec 24 2021</p>
+                    </div>
+                    <div class="slide item">
+                        <img src="images/blog-3.png" alt="an image">
+                        <h2>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis rem consequatur
+                            cupiditate, deleniti in incidunt velit eum sit doloremque vitae id? Libero similique
+                            temporibus incidunt dolore vero velit. Amet, optio?</p>
+                        <p>by Md Sweem / Dec 24 2021</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <hr class="hr-line">
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer-section p-md-5">
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-3 p-md-0 p-4 left-footer">
+                            <a class="fs-3 fw-medium" href="/index.html"> <i class="fa-solid fa-globe fs-3"></i> Intech
+                            </a>
+                            <p class="my-md-4 my-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                nesciunt optio sit hic
+                                laudantium veniam sapiente debitis ipsa quia temporibus veritatis cumque harum laborum
+                                id
+                                magnam, magni laboriosam enim inventore!</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com" target="_new" title="facebook"
+                                    class="fab fa-facebook-f"></a>
+                                <a href="https://www.twitter.com" target="_new" title="twitter"
+                                    class="fab fa-twitter"></a>
+                                <a href="https://www.linkedin.com" target="_new" title="linkedin"
+                                    class="fab fa-linkedin-in"></a>
+                                <a href="https://www.instagram.com" target="_new" title="instagram"
+                                    class="fab fa-instagram"></a>
+                                <a href="https://www.behance.com" target="_new" title="behance"
+                                    class="fab fa-behance"></a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3 text-left text-md-center">
+                            <ul>
+                                <li>
+                                    <h3 class="fs-2 text-white">Quick Link</h3>
+                                </li>
+                                <li><a href="">Company History</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-3 text-left text-md-center">
+                            <ul>
+                                <li>
+                                    <h3 class="fs-2 text-white">Services</h3>
+                                </li>
+                                <li><a href="">Managed IT</a></li>
+                                <li><a href="">Multi Function</a></li>
+                                <li><a href="">Cyber Security</a></li>
+                                <li><a href="">Data Management</a></li>
+                                <li><a href="">Cloud Computing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-3 text-left text-md-center">
+                            <ul>
+                                <li>
+                                    <h3 class="fs-2 text-white">Contact Info</h3>
+                                </li>
+                                <li><a>23B, Sky Colony , florida, UK</a></li>
+                                <li><a href="">+21(023)-235-2563</a></li>
+                                <li><a href="">info@intech.com</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <hr class="hr-line">
+
+                    <div class="end-footer">
+                        <p>
+                            Copyrights(©)2021 | All Rights Reserved.
+                        </p>
+                        <p>
+                            Terms & Service | Privacy Policy
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

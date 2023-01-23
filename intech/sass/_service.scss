@@ -1,0 +1,70 @@
+#service {
+  margin: 2rem 0;
+  .service {
+    background: var(--light-grey-bg);
+    width: 100%;
+    height: auto;
+    @include flexbox-5;
+    position: relative;
+    .service-slider {
+      margin: 3rem 0;
+      position: relative;
+      .slide {
+        background-color: var(--light-black-bg);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        @include flexbox-6;
+        img {
+          width: auto;
+        }
+        &:hover {
+          transition: all 0.2s linear;
+          transform: scale(0.9);
+        }
+        h3 {
+          margin: 1.5rem 0;
+          font-weight: bold;
+        }
+        p {
+          font-size: 1.4rem;
+          line-height: 2.3rem;
+        }
+      }
+    }
+  }
+  .banner {
+    background: url("../images/service-banner.png") center/cover no-repeat;
+    width: 100%;
+    height: 30rem;
+    margin-top: 2rem;
+    @include flexbox-1;
+    img {
+      width: 100%;
+    }
+    .content {
+      @include flexbox-1;
+      .btn-1 {
+        padding: 1rem 1.8rem;
+        word-spacing: 0.2rem;
+        font-size: 1.5rem;
+        background: #5538f4;
+        border: #5538f4;
+        &:hover {
+          background: #5438f4c9;
+        }
+      }
+      .btn-2 {
+        padding: 1rem 1.8rem;
+        word-spacing: 0.2rem;
+        font-size: 1.5rem;
+        background: #20dfe3;
+        border: #20dfe3;
+        &:hover {
+          background: #20e0e3b0;
+        }
+      }
+    }
+  }
+}
+
+

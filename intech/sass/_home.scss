@@ -1,0 +1,67 @@
+#home {
+  margin-top: 18rem;
+  .home-section {
+    @include flexbox-4;
+    gap: 2rem;
+    .home-img {
+      width: 35%;
+      height: auto;
+      box-shadow: 0 0 1rem;
+      position: relative;
+      &::before {
+        content: "";
+        background: url("../images/dots.png");
+        position: absolute;
+        top: -12rem;
+        left: 6rem;
+        bottom: 0;
+        right: 3rem;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: -1;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .content {
+      width: 55%;
+      p {
+        line-height: 2.3rem;
+        font-size: 1.3rem;
+      }
+      li {
+        list-style: disc !important;
+        font-size: 13px;
+        color: var(--black);
+        line-height: 2.3rem;
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (max-width: 810px) {
+  .home-col-2 {
+    justify-content: flex-start !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  #home {
+    margin-top: 3rem;
+    padding: 0 1rem;
+    .home-section {
+      .content {
+        width: 100%;
+      }
+      .home-img {
+        width: 100%;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

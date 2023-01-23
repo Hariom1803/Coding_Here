@@ -1,0 +1,87 @@
+#contact {
+  .contact-section {
+    p {
+      line-height: 2.3rem;
+      font-size: 1.5rem;
+      color: #000;
+    }
+    .form-1 {
+      background-color: #f0f1f5;
+      height: auto;
+      padding: 5rem 6rem;
+      input,
+      textarea {
+        padding: 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        &::placeholder {
+          font-size: 1.3rem;
+          color: #2d2c2c;
+        }
+      }
+      textarea {
+        resize: none;
+      }
+      button {
+        padding: 1.2rem 1.7rem;
+        background-color: var(--light-green);
+        border: none;
+        color: var(--black);
+        font-size: 1.4rem;
+        &:hover {
+          background-color: var(--black);
+          color: var(--white);
+        }
+      }
+    }
+    .form-2 {
+      background-color: #5538f4;
+      height: auto;
+      padding: 6rem 3rem;
+      button {
+        padding: 1rem 1.8rem;
+        background-color: var(--light-green);
+        display: block;
+        border: #20dfe3;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        &:hover {
+          background-color: var(--black);
+        }
+      }
+    }
+    .form-3 {
+      background-color: white;
+      height: auto;
+      padding: 9rem 2rem;
+      a {
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: var(--light-green);
+        &:hover {
+          color: var(--black);
+        }
+      }
+      i {
+        color: var(--light-green);
+      }
+    }
+  }
+}
+
+//
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s !important;
+  font-size: 1.5rem !important;
+}
+
+@media screen and (max-width: 991px) {
+  .form-1,
+  .form-2,
+  .form-3 {
+    padding: 3rem 2rem !important;
+  }
+}

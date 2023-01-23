@@ -1,0 +1,41 @@
+// hero section css
+.hero-bg {
+  width: 100%;
+  background: url("../images/hero-bg.png") center/cover no-repeat;
+  height: 100vh;
+  @include flexbox-2;
+  color: #fff;
+  .content {
+    p {
+      font-size: 1.4rem;
+      margin: 1.5rem 0;
+      color: #fff;
+    }
+    .description {
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+      color: #fff;
+    }
+    .btn-1 {
+      padding: 1rem 1.5rem;
+      background-color: var(--sky);
+      font-size: 1.6rem;
+      font-weight: 500;
+      border: none;
+      &:hover {
+        background-color: var(--bg-black);
+      }
+    }
+    .btn-2 {
+      padding: 1rem 1.5rem;
+      background-color: var(--white);
+      font-size: 1.6rem;
+      font-weight: 500;
+      border: none;
+      color: var(--black);
+      &:hover {
+        background-color: var(--sky);
+      }
+    }
+  }
+}
